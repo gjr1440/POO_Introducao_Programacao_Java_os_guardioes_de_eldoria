@@ -1,0 +1,10 @@
+public class Guerreiro extends Personagem {
+
+    public Guerreiro(String nome, String classe, int nivel, int pontosDeVida, double poderBase) {
+        super(nome, classe, nivel, pontosDeVida, poderBase);
+    }
+    
+    public void usarHabilidade() {
+        System.out.println("\nO guerreiro " + getNome() + " empunha sua espada e ataca com força!");
+    }
+}
