@@ -4,6 +4,7 @@ public class Guerreiro extends Personagem {
         super(nome, classe, nivel, pontosDeVida, poderBase);
     }
     
+    @Override
     public void usarHabilidade() {
         System.out.println("\nO guerreiro " + getNome() + " empunha sua espada e ataca com força!");
     }

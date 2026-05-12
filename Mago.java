@@ -4,6 +4,7 @@ public class Mago extends Personagem {
         super(nome, classe, nivel, pontosDeVida, poderBase);
     }
     
+    @Override
     public void usarHabilidade() {
         System.out.println("\nO mago " + getNome() + " conjura uma poderosa magia!");
     }

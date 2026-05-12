@@ -1,12 +1,21 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
+        ArrayList<Personagem> personagens = new ArrayList<>();
+
         Personagem heroi1 = new Guerreiro("Arthus", "Guerreiro", 1, 100, 10.5);
         Personagem heroi2 = new Mago("Tharkun", "Mago", 1, 100, 10.5);
 
-        heroi1.exibirStatus();
-        heroi2.exibirStatus();
+        personagens.add(heroi1);
+        personagens.add(heroi2);
 
-        heroi1.usarHabilidade();
-        heroi2.usarHabilidade();
+        for (Personagem p : personagens) {
+            p.exibirStatus();
+        }
+
+        for (Personagem p : personagens) {
+            p.usarHabilidade();
+        }
     }
 }

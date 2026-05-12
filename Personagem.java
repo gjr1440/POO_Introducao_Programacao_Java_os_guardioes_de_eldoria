@@ -1,4 +1,4 @@
-public class Personagem {
+public abstract class Personagem {
     private String nome;
     private String classe;
     private int nivel;
@@ -12,14 +12,24 @@ public class Personagem {
         this.pontosDeVida = pontosDeVida;
         this.poderBase = poderBase;
     }
-
+    
     public String getNome() {
         return nome;
     }
-
-    public void usarHabilidade() {
-        System.out.println("\n" + getNome() + " não possui uma habilidade especial definida.");
+    public String getClasse() {
+        return classe;
     }
+    public int getNivel() {
+        return nivel;
+    }
+    public int getPontosDeVida() {
+        return pontosDeVida;
+    }
+    public double getPoderBase() {
+        return poderBase;
+    }
+
+    public abstract void usarHabilidade();
 
     public void exibirStatus() {
         System.out.println("\n--- Status do Personagem ---");
